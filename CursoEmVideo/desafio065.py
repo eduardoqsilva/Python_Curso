@@ -15,5 +15,5 @@ while continua != "N":
         if num < menor:
             menor = num
     acumula += num
-    continua = str(input("Continua [S] ou [N]: ")).strip().upper()
+    continua = str(input("Continua [S] ou [N]: ")).strip().upper()[0]
 print(f"A média é {acumula/c :.2f}, o maior número foi {maior} eo menor foi {menor}, foram digitados {c} números.")
