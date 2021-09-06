@@ -4,7 +4,11 @@ d = " "
 print("*"*20,"PAR OU ÍMPAR","*"*20)
 while True:
     num = int(input("Digite um número de 1 a 10: "))
+    while num > 10:
+        num = int(input("Digite um número de 1 a 10: "))
     esclh = str(input("Digite [P] para par ou [I] para ímpar: ")).strip().upper()[0]
+    while esclh != "P" and esclh != "I":
+        esclh = str(input("Digite [P] para par ou [I] para ímpar: ")).strip().upper()[0]
     c += 1
     randnum = randint(1, 10)
     if (num + randnum) % 2 == 0:
