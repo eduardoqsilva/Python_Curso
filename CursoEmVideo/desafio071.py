@@ -1,3 +1,6 @@
+print("="*20)
+print("{:^20}".format("BANCO"))
+print("="*20)
 valor = int(input("Digite o valor a ser sacado R$"))
 cedula = 50
 total = valor

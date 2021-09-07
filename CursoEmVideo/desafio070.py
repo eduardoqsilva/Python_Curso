@@ -8,16 +8,11 @@ while True:
     continua = str(input("Continua [S] ou [N]: ")).strip().upper()[0]
     tot += preco
     cont += 1
-    if cont == 1:
-        maisB = preco
-        nomMaisB = nome
-
-    if maisB > preco:
+    if cont == 1 or maisB > preco:
         maisB = preco
         nomMaisB = nome
     if preco > 1000:
         maisC += 1
-
     if continua == "N":
         break
 print(f'''O total da compra foi R${tot}
