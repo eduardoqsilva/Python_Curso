@@ -1,7 +1,7 @@
 from random import randint
 num = randnum = c = v = 0
 d = " "
-print("*"*20,"PAR OU ÍMPAR","*"*20)
+print("*"*20, "PAR OU ÍMPAR", "*"*20)
 while True:
     num = int(input("Digite um número de 1 a 10: "))
     while num > 10:
