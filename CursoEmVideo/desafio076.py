@@ -1,0 +1,7 @@
+tupla = ('Arroz', 25.99, 'Feijão', 7.99, 'Caneta', 1.99, 'Pizza', 20.99)
+print("="*30)
+print(tupla[0],".............","R$",tupla[1])
+print(tupla[2],"............","R$",tupla[3])
+print(tupla[4],"............","R$",tupla[5])
+print(tupla[6],".............","R$",tupla[7])
+print("="*30)
