@@ -4,4 +4,4 @@ tabel_brasileirão = ("Atlético-mg", "Palmeiras", "Fortaleza", "Bragantino", "F
 print(f'''Os 5 primeiros colocados são: {tabel_brasileirão[0:5]}.
 Os 4 últimos colocados da tabela são: {tabel_brasileirão[16:]}.
 Em ordem alfabética {sorted(tabel_brasileirão)}.
-O time chapecoence está na posição {(tabel_brasileirão).index("Chapecoence")+1}''')
+O time chapecoence está na posição {tabel_brasileirão.index("Chapecoence")+1}''')
