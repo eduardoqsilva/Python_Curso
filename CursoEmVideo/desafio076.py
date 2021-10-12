@@ -1,7 +1,9 @@
 tupla = ('Arroz', 25.99, 'Feijão', 7.99, 'Caneta', 1.99, 'Pizza', 20.99)
+print(f'{"Listagem de preços":^30}')
 print("="*30)
-print(tupla[0],".............","R$",tupla[1])
-print(tupla[2],"............","R$",tupla[3])
-print(tupla[4],"............","R$",tupla[5])
-print(tupla[6],".............","R$",tupla[7])
+for pos in range(0, len(tupla)):
+    if pos % 2 == 0:
+        print(f"{tupla[pos]:.<20}", end="")
+    else:
+        print(f"R${tupla[pos]:>7.2f}")
 print("="*30)
