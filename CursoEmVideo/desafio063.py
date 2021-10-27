@@ -13,6 +13,6 @@ while contador <= c:
     contador += 1
     t1 = t2
     t2 = t3
-    if c ==  contador:
+    if c == contador:
         c = int(input("\nDigite o número de termos ou 0 para sair: "))
 print(" -> Fim")

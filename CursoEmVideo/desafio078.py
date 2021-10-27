@@ -1,14 +1,20 @@
 lista = []
 posicaoMaior = []
 posicaoMenor = []
-posiAtual = 0
+
+pos = 1
 for c in range(0, 5):
-    lista.append(int(input(f"Digite um valor para a posição {c}: ")))
-for c in lista:
-    if c == max(lista):
-        posicaoMaior.append(posiAtual)
-    if c == min(lista):
-        posicaoMenor.append(posiAtual)
-    posiAtual += 1
-print(f"O maior valor foi {max(lista)} na posição {posicaoMaior},"
-      f" e o menor valor é {min(lista)} na posição {posicaoMenor}.")
+    lista.append(int(input(f"Digite um valor para a posição {c +1}: ")))
+print()
+print(f"O maior valor foi {max(lista)} nas posições:", end=' ')
+for i in lista:
+    if i == max(lista):
+        print(f"{pos}", end="...")
+    pos += 1
+pos = 1
+print()
+print(f"E o menor valor é {min(lista)} na posições:", end=' ')
+for i in lista:
+    if i == min(lista):
+        print(f"{pos}", end='...')
+    pos += 1
