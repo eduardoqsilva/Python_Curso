@@ -1,12 +1,10 @@
-I = []
-P = []
-lista = []
+lista = [[], []]
 for c in range(1, 8):
     num = int(input(f"Digite o {c} valor: "))
     if num % 2 == 0:
-      P.append(num)
+        lista[0].append(num)
     else:
-        I.append(num)
-lista = sorted(P), sorted(I)
+        lista[1].append(num)
+lista = sorted(lista[0]), sorted(lista[1])
 print(f"Os valores pares são: {lista[0]}")
 print(f"Os valores ímpares são: {lista[1]}")

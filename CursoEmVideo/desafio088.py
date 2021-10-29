@@ -17,4 +17,4 @@ for c in range(0, n):
     print(f"Jogo {c+ 1}: {megaSena[c]}")
     sleep(1)
 print("=-" * 30)
-print("~~ <BOA SORTE!> ~~".center(50))
+print("~~ < BOA SORTE! > ~~".center(50))
