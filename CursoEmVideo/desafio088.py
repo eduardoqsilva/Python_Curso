@@ -25,7 +25,7 @@ tot = 1
 for c in megaSena:
     print(f"Jogo {tot}: {c}")
     tot += 1
-    sleep(1)
+   # sleep(1)
 print("=-"*30)
 print("~~ < Boa sorte! > ~~".center(50))
 print("=-"*30)
